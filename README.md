@@ -10,11 +10,11 @@ Todo mês chega uma base consolidada de contatos para campanhas comerciais. Para
 
 ## O que o script faz
 
-1. **Lê** a planilha principal.
+1. **Lê** a planilha principal, que tem duas abas: **Base PF** (pessoa física, CPF) e **Base PJ** (pessoa jurídica, CNPJ).
 2. **Filtra** pelo mês e pela campanha escolhidos.
-3. **Limpa** os dados: CPF e CNPJ com os zeros à esquerda de volta, só o primeiro e-mail e telefone de cada contato, ponto de atendimento só com o número.
+3. **Limpa** os dados: CPF (11 dígitos) e CNPJ (14 dígitos) com os zeros à esquerda de volta, só o primeiro e-mail e telefone de cada contato, ponto de atendimento só com o número.
 4. **Descarta** registros sem e-mail.
-5. **Separa** em um arquivo Excel por unidade, na pasta `saida/`.
+5. **Separa** em um arquivo Excel por unidade, na pasta `saida/`, um conjunto para PF e outro para PJ (cada aba com as suas colunas).
 
 ## Como testar
 
