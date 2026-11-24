@@ -17,13 +17,14 @@ COLUNA_UNIDADE = "Unidade/Código"  # coluna usada para separar os arquivos (um 
 COL_MES = "Mês-Ano"
 COL_CAMPANHA = "Campanha"
 COL_DOCUMENTO = "Documento"
+COL_TIPO_DOC = "Tipo de documento"  # CPF (11 dígitos) ou CNPJ (14 dígitos)
 COL_TELEFONE = "Telefone"
 COL_EMAIL = "E-mail"
 COL_PONTO = "Ponto de atendimento"
 
 COLUNAS_FINAIS = [
     "Já é cliente", COLUNA_UNIDADE, COL_PONTO, COL_CAMPANHA, "Perfil",
-    COL_DOCUMENTO, COL_TELEFONE, COL_EMAIL, "Nome", "Município", "UF",
+    COL_TIPO_DOC, COL_DOCUMENTO, COL_TELEFONE, COL_EMAIL, "Nome", "Município", "UF",
     "Status/Retorno", "Observação",
 ]
 
@@ -39,8 +40,9 @@ def limpar(df: pd.DataFrame) -> pd.DataFrame:
     df = df[df[COL_CAMPANHA] == CAMPANHA]
     df = df[COLUNAS_FINAIS].copy()  # .copy() evita aviso do pandas ao alterar
 
-    # documento com 11 dígitos (o Excel costuma comer o zero da esquerda)
-    df[COL_DOCUMENTO] = df[COL_DOCUMENTO].astype(str).str.rjust(11, fillchar="0")
+    # devolve os zeros da esquerda que o Excel come: CPF fica com 11 dígitos, CNPJ com 14
+    tamanho = df[COL_TIPO_DOC].map({"CPF": 11, "CNPJ": 14}).fillna(11).astype(int)
+    df[COL_DOCUMENTO] = [str(d).zfill(n) for d, n in zip(df[COL_DOCUMENTO], tamanho)]
     # ponto de atendimento: fica só com o número
     df[COL_PONTO] = df[COL_PONTO].astype(str).str.extract(r"(\d+)", expand=False)
 

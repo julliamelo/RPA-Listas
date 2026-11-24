@@ -12,7 +12,7 @@ Todo mês chega uma base consolidada de contatos para campanhas comerciais. Para
 
 1. **Lê** a planilha principal.
 2. **Filtra** pelo mês e pela campanha escolhidos.
-3. **Limpa** os dados: documento com zeros à esquerda, só o primeiro e-mail e telefone de cada contato, ponto de atendimento só com o número.
+3. **Limpa** os dados: CPF e CNPJ com os zeros à esquerda de volta, só o primeiro e-mail e telefone de cada contato, ponto de atendimento só com o número.
 4. **Descarta** registros sem e-mail.
 5. **Separa** em um arquivo Excel por unidade, na pasta `saida/`.
 
