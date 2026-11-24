@@ -37,3 +37,6 @@ Abra `segmentar_listas.py` e mude o bloco **CONFIGURAÇÃO** no começo do arqui
 ## Resultado
 
 Preparação das listas mensais sem trabalho manual, com o mesmo padrão em todos os arquivos.
+
+---
+Mais projetos no [meu perfil](https://github.com/julliamelo).
