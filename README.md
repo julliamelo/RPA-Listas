@@ -1,6 +1,6 @@
-# Segmentação automática de listas (RPA com Python)
+# Segmentação automática de listas **(RPA com Python)**
 
-Script em Python que lê uma lista grande, limpa os dados e separa em **um arquivo Excel por unidade**. Substitui o trabalho manual de abrir a planilha, filtrar, copiar e colar para cada área.
+> #Script em Python que lê uma lista grande, limpa os dados e separa em **um arquivo Excel por unidade**. Substitui o trabalho manual de abrir a planilha, filtrar, copiar e colar para cada área.
 
 Esta versão é **genérica**: usa dados de exemplo (todos falsos) e pode ser adaptada para qualquer empresa trocando só a configuração e os nomes das colunas.
 
