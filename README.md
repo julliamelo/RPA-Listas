@@ -40,3 +40,7 @@ Preparação das listas mensais sem trabalho manual, com o mesmo padrão em todo
 
 ---
 Mais projetos no [meu perfil](https://github.com/julliamelo).
+
+## Direitos
+
+© 2026 Júllia Melo. Todos os direitos reservados. Veja o [LICENSE](LICENSE).

@@ -1,0 +1,12 @@
+RPA-Listas
+Copyright (c) 2026 Júllia Melo. Todos os direitos reservados.
+
+O código, os textos e os arquivos deste repositório podem ser vistos para
+consulta. Usar, copiar, modificar, distribuir ou vender, no todo ou em parte,
+exige autorização por escrito da autora.
+
+Esta regra não retira os direitos que o GitHub dá aos usuários nos próprios
+termos de uso, como ver e fazer fork de repositórios públicos.
+
+As bibliotecas usadas pelo programa, como o pandas e o openpyxl, têm licenças
+próprias. O programa é oferecido sem garantias.
